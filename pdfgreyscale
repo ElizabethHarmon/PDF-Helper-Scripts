@@ -1,0 +1,2 @@
+#!/bin/bash
+gs -sDEVICE=pdfwrite -sColorConversionStrategy=Gray -dProcessColorModel=/DeviceGray -dCompatibilityLevel=1.4 -dNOPAUSE -dBATCH -o ~/Desktop/"$(basename "$1" .pdf) grey.pdf" "$1"

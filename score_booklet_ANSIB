@@ -1,0 +1,8 @@
+#!/bin/sh
+pdfbook --short-edge --papersize '{11in,17in}'  --noautoscale 'true' --outfile ~/Desktop/temp.pdf -- "$1"
+filename=$(basename "$1")
+fname="${filename%.*}"
+mv ~/Desktop/temp.pdf ~/Desktop/"$fname-booklet.pdf"
+
+
+
